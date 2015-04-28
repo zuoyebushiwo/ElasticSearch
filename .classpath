@@ -22,5 +22,6 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="lib/elasticsearch-0.16.0.jar" sourcepath="E:/WorkSpace/company/第一企信框架源码目录收集/elasticsearch-0.16.1-sources.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
