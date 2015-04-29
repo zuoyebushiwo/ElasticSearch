@@ -45,5 +45,16 @@
 	<classpathentry kind="lib" path="lib/lucene-spatial-4.10.2.jar"/>
 	<classpathentry kind="lib" path="lib/lucene-suggest-4.10.2.jar"/>
 	<classpathentry kind="lib" path="lib/spatial4j-0.4.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Administrator/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.5.1/jackson-databind-2.5.1.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="maven.groupId" value="com.fasterxml.jackson.core"/>
+			<attribute name="maven.artifactId" value="jackson-databind"/>
+			<attribute name="maven.version" value="2.5.1"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/jackson-core-2.0.6.jar"/>
+	<classpathentry kind="lib" path="lib/jackson-annotations-2.0.6.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

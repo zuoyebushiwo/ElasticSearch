@@ -19,6 +19,8 @@ public class ESUtils {
 	}
 
 	public static final String TYPE_NAME = "estype";
+	
+	public static final String USER_TYPE = "euser";
 
 	public static String getTypeName() {
 		return TYPE_NAME;
