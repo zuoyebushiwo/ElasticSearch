@@ -1,9 +1,9 @@
-package com.zuoye.elasticsearch.operation.add;
+package com.zuoye.elasticsearch.operation;
 
 import org.elasticsearch.action.index.IndexResponse;
 import org.elasticsearch.client.Client;
 
-import com.zuoye.elasticsearch.util.ESUtils;
+import com.zuoye.elasticsearch.ESUtils;
 
 /**
  * 在 es 中，没有增加这个概念，所谓增加，就是将一条记录存储到 es 里面。 Es 里面将这个过 程叫做索引（ index）
@@ -14,15 +14,16 @@ import com.zuoye.elasticsearch.util.ESUtils;
 public class Add {
 
 	public static void main(String[] args) {
-		
+
 		Client client = ESUtils.getClient();
 		IndexResponse indexResponse = client
 				.prepareIndex()
 				.setIndex(ESUtils.getIndexName())
 				.setType(ESUtils.getTypeName())
 				.setSource(
-						"{\"prodId\":1,\"prodName\":\"ipad5\",\"prodDesc\":\"aaa\",\"catId\":1}")
-				.setId("1").execute().actionGet();
+						"{\"prodId\":1,\"prodName\":\"ipad5\",\"prodDesc\":\"比你想的更强大\",\"catId\":1}")
+				.setId("2").execute().actionGet();
+		System.out.println("添加成功,isCreated=" + indexResponse.isCreated());
 		ESUtils.closeClient(client);
 	}
 }

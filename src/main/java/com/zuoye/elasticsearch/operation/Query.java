@@ -1,9 +1,9 @@
-package com.zuoye.elasticsearch.operation.query;
+package com.zuoye.elasticsearch.operation;
 
 import org.elasticsearch.action.get.GetResponse;
 import org.elasticsearch.client.Client;
 
-import com.zuoye.elasticsearch.util.ESUtils;
+import com.zuoye.elasticsearch.ESUtils;
 
 /**
  * @author 昨夜不是我
@@ -12,9 +12,11 @@ import com.zuoye.elasticsearch.util.ESUtils;
 public class Query {
 
 	public static void main(String[] args) {
+		
 		Client client = ESUtils.getClient();
 		GetResponse getResponse = client.prepareGet()
-				.setType("producer").execute()
+				.setIndex(ESUtils.getIndexName())
+				.setType(ESUtils.getTypeName()).setId("2").execute()
 				.actionGet();
 		System.out.println("get=" + getResponse.getSourceAsString());
 	}

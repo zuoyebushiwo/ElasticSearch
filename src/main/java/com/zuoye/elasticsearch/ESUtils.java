@@ -1,4 +1,4 @@
-package com.zuoye.elasticsearch.util;
+package com.zuoye.elasticsearch;
 
 import org.elasticsearch.client.Client;
 import org.elasticsearch.client.transport.TransportClient;
@@ -27,7 +27,7 @@ public class ESUtils {
 	public static Client getClient() {
 		Settings settings = ImmutableSettings.settingsBuilder()
 				// 指定集群名称
-				.put("cluster.name", "zhangxuejun")
+				.put("cluster.name", "elasticsearch")
 				// 探测集群中机器状态
 				.put("client.transport.sniff", true).build();
 
@@ -36,7 +36,7 @@ public class ESUtils {
 		 */
 		TransportClient client = new TransportClient(settings) // new TransportClient(settings) 非集群
 				.addTransportAddress(new InetSocketTransportAddress(
-						"127.0.0.1", 9300));
+						"192.168.85.3", 9300));
 		return client;
 	}
 
