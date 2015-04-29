@@ -22,6 +22,28 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="lib/elasticsearch-0.16.0.jar" sourcepath="E:/WorkSpace/company/第一企信框架源码目录收集/elasticsearch-0.16.1-sources.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="lib" path="lib/antlr-runtime-3.5.jar"/>
+	<classpathentry kind="lib" path="lib/asm-4.1.jar"/>
+	<classpathentry kind="lib" path="lib/asm-commons-4.1.jar"/>
+	<classpathentry kind="lib" path="lib/elasticsearch-1.4.2.jar"/>
+	<classpathentry kind="lib" path="lib/groovy-all-2.3.2.jar"/>
+	<classpathentry kind="lib" path="lib/jna-4.1.0.jar"/>
+	<classpathentry kind="lib" path="lib/jts-1.13.jar"/>
+	<classpathentry kind="lib" path="lib/log4j-1.2.17.jar"/>
+	<classpathentry kind="lib" path="lib/lucene-analyzers-common-4.10.2.jar"/>
+	<classpathentry kind="lib" path="lib/lucene-core-4.10.2.jar"/>
+	<classpathentry kind="lib" path="lib/lucene-expressions-4.10.2.jar"/>
+	<classpathentry kind="lib" path="lib/lucene-grouping-4.10.2.jar"/>
+	<classpathentry kind="lib" path="lib/lucene-highlighter-4.10.2.jar"/>
+	<classpathentry kind="lib" path="lib/lucene-join-4.10.2.jar"/>
+	<classpathentry kind="lib" path="lib/lucene-memory-4.10.2.jar"/>
+	<classpathentry kind="lib" path="lib/lucene-misc-4.10.2.jar"/>
+	<classpathentry kind="lib" path="lib/lucene-queries-4.10.2.jar"/>
+	<classpathentry kind="lib" path="lib/lucene-queryparser-4.10.2.jar"/>
+	<classpathentry kind="lib" path="lib/lucene-sandbox-4.10.2.jar"/>
+	<classpathentry kind="lib" path="lib/lucene-spatial-4.10.2.jar"/>
+	<classpathentry kind="lib" path="lib/lucene-suggest-4.10.2.jar"/>
+	<classpathentry kind="lib" path="lib/spatial4j-0.4.1.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

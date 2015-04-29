@@ -1,0 +1,7 @@
+第一步:启动一个elasticsearch服务，bin目录下的elasticsearch.bat
+第二步:建索引，执行_Index中单元测试方法index()
+第三步:检索，执行_Search中单元测试方法search()
+
+实例参考网上代码：http://blog.mkfree.com/posts/51679f71975a2683ccfee2cc
+本实例基于： elasticsearch 0.20.5
+编写by：http://blog.csdn.net/foamflower
