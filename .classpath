@@ -54,8 +54,8 @@
 			<attribute name="maven.scope" value="compile"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="lib/jackson-core-2.0.6.jar"/>
-	<classpathentry kind="lib" path="lib/jackson-annotations-2.0.6.jar"/>
-	<classpathentry kind="lib" path="lib/jackson-databind-2.0.6.jar"/>
+	<classpathentry kind="lib" path="lib/jackson-annotations-2.5.0.jar"/>
+	<classpathentry kind="lib" path="lib/jackson-core-2.5.1.jar"/>
+	<classpathentry kind="lib" path="lib/jackson-databind-2.5.1.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

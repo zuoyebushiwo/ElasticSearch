@@ -19,10 +19,10 @@ public class Search {
 
 		Client client = ESUtils.getClient();
 
-		QueryBuilder query = QueryBuilders.queryString("ipad5");
+		QueryBuilder query = QueryBuilders.queryString("user*");
 		SearchResponse response = client.prepareSearch(ESUtils.INDEX_NAME)
 		// 设置查询条件,
-				.setQuery(query).setFrom(0).setSize(60).execute().actionGet();
+				.setQuery(query).setFrom(0).setSize(600).execute().actionGet();
 		/**
 		 * SearchHits是SearchHit的复数形式，表示这个是一个列表
 		 */
