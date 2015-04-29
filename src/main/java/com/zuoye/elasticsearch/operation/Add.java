@@ -21,8 +21,8 @@ public class Add {
 				.setIndex(ESUtils.getIndexName())
 				.setType(ESUtils.getTypeName())
 				.setSource(
-						"{\"prodId\":1,\"prodName\":\"ipad5\",\"prodDesc\":\"比你想的更强大\",\"catId\":1}")
-				.setId("2").execute().actionGet();
+						"{\"prodId\":1,\"prodName\":\"ipadaa\",\"prodDesc\":\"比你想的更强大\",\"catId\":1}")
+				.setId("3").execute().actionGet();
 		System.out.println("添加成功,isCreated=" + indexResponse.isCreated());
 		ESUtils.closeClient(client);
 	}
